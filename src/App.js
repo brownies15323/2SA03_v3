@@ -1,18 +1,16 @@
-import React , {Component} from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
-import Content from './Content';
+import CharacterCard from './CharacterCard.js';
+import WordCard from './WordCard.js';
 
-let x = 20
-class App extends Component{
-  render(){
+const word = "alone";
+class App extends Component {
+  render() {
     return (
-      <div className="App">
-        Hello {x}
-        <Content/>
+      <div>
+        <WordCard value="alone" />
       </div>
     );
   }
 }
-
 export default App;
